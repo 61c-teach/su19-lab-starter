@@ -1,5 +1,5 @@
 CC=gcc
-CFLAGS=-fopenmp -g -std=gnu99 -pthread
+CFLAGS=-fopenmp -g -std=gnu99 -pthread -Wall -Wpedantic 
 LDFLAGS=-fopenmp 
 
 all: v_add hello dotp

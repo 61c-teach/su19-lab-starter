@@ -3,7 +3,7 @@ all: bit_ops lfsr factorial list_map
 
 CC=gcc
 LD=gcc
-CFLAGS=-ggdb -Wall -std=c99
+CFLAGS=-ggdb -Wall -Wpedantic -std=c99
 LDFLAGS=
 
 lfsr: lfsr.c
