@@ -62,9 +62,13 @@ int verify(double* x, double* y, void (*funct)(double* x, double* y, double* z))
   }
   for (int i = 0; i < ARRAY_SIZE; i++) {
     if (z_oracle[i] != z_v_add[i]) {
+      free(z_v_add);
+      free(z_oracle);
       return 0;
     }
   }
+  free(z_v_add);
+  free(z_oracle);
   return 1;
 }
 
