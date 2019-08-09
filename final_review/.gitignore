@@ -1,0 +1,4 @@
+*.o
+simd
+parallel
+a.out
