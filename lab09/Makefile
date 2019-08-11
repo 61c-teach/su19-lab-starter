@@ -1,5 +1,5 @@
 CC=gcc
-C_FLAGS=--std=c99
+C_FLAGS=-Wall -Wpedantic --std=c99
 
 simd: simd.c common.c
 	$(CC) $(C_FLAGS) -O0 simd.c common.c -o simd

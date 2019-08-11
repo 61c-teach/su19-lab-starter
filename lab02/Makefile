@@ -1,7 +1,7 @@
 UNAME_S := $(shell uname -s)
 CC=gcc
 LD=gcc
-CFLAGS=-ggdb -Wall -std=c99
+CFLAGS=-ggdb -Wall -Wpedantic -std=c99
 LDFLAGS=
 
 ifeq ($(UNAME_S), Darwin)
